@@ -1,4 +1,4 @@
-name: 自动构建docker镜像
+name: 自动构建docker镜像64位
 
 on:
   schedule:
@@ -27,14 +27,14 @@ jobs:
         id: buildx
         uses: docker/setup-buildx-action@v2
 
-      - name: Build and push all
-        id: docker_build_all
+      - name: Build and push 64
+        id: docker_build_64
         uses: docker/build-push-action@v3
         with:
           context: ./dockerfile/
           file: ./dockerfile/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/bingpt:latest
-          platforms: linux/amd64,linux/386,linux/arm64,linux/arm
-      - name: all Image digest
-        run: echo ${{ steps.docker_build_all.outputs.digest }}
+          platforms: linux/amd64,linux/arm64
+      - name: 64 Image digest
+        run: echo ${{ steps.docker_build_64.outputs.digest }}
