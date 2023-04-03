@@ -1,22 +1,22 @@
-- [中文](#bingpt_docker-ZH)
-- [ENGLISH](#bingpt_docker-EN)
+- [中文](#bingpt_docker(ZH))
+- [ENGLISH](#bingpt_docker(EN))
 
-# bingpt_docker ZH
+# bingpt_docker(ZH)
 
 - [Github](https://github.com/niliovo/bingpt_docker)
 - [Docker Hub](https://hub.docker.com/r/niliaerith/bingpt)
 
-# 本项目基于下列项目，将 PandoraAI 集成到docker镜像
+## 本项目基于下列项目，将 PandoraAI 集成到docker镜像
 
 - [PandoraAI](https://github.com/waylaidwanderer/PandoraAI)
 
-## Docker-Cli使用指南
+### Docker-Cli使用指南
 
 ```bash
 docker run -itd --name bingpt --hostname bingpt --net bridge -p 3001:3000 --restart always -v /your_path/bingpt/.env:/pandora-ai/.env -v /your_path/bingpt/nuxt.config.js:/pandora-ai/nuxt.config.js -e API_BASE_URL=https://www.example.com niliaerith/bingpt:latest
 ```
 
-## Docker Compose使用指南
+### Docker Compose使用指南
 
 - bingpt
 
@@ -36,7 +36,7 @@ docker run -itd --name bingpt --hostname bingpt --net bridge -p 3001:3000 --rest
       - /your_path/bingpt/nuxt.config.js:/pandora-ai/nuxt.config.js
 ```
 
-## 变量
+### 变量
 
 > 必须变量
 - `-v /your_path/bingpt/.env:/pandora-ai/.env`  或 `-e API_BASE_URL=https://www.example.com`
@@ -46,34 +46,34 @@ docker run -itd --name bingpt --hostname bingpt --net bridge -p 3001:3000 --rest
 - `-v /your_path/bingpt/nuxt.config.js:/pandora-ai/nuxt.config.js`
 - - `nuxt.config.js`文件为nuxt配置文件，可修改标题等
 
-## 支持平台
+### 支持平台
 
 - amd64
 - arm64
 
-# 感谢
+## 感谢
 
 - [@waylaidwanderer/PandoraAI](https://github.com/waylaidwanderer/PandoraAI)
 - [GitHub](https://github.com/)
 - [Docker Hub](https://hub.docker.com/)
 - [中科大源](https://mirrors.ustc.edu.cn/)
 
-# bingpt_docker EN
+# bingpt_docker(EN)
 
 - [Github](https://github.com/niliovo/bingpt_docker)
 - [Docker Hub](https://hub.docker.com/r/niliaerith/bingpt)
 
-# This project is based on the following projects to integrate PandoraAI into the docker image
+## This project is based on the following projects to integrate PandoraAI into the docker image
 
 - [PandoraAI](https://github.com/waylaidwanderer/PandoraAI)
 
-## Docker-Cli Usage Guide
+### Docker-Cli Usage Guide
 
 ```bash
 docker run -itd --name bingpt --hostname bingpt --net bridge -p 3001:3000 --restart always -v /your_path/bingpt/.env:/pandora-ai/.env -v /your_path/bingpt/nuxt.config.js:/pandora-ai/nuxt.config.js -e API_BASE_URL=https://www.example.com niliaerith/bingpt:latest
 ```
 
-## Docker Compose Usage Guide
+### Docker Compose Usage Guide
 
 - bingpt
 
@@ -93,7 +93,7 @@ docker run -itd --name bingpt --hostname bingpt --net bridge -p 3001:3000 --rest
       - /your_path/bingpt/nuxt.config.js:/pandora-ai/nuxt.config.js
 ```
 
-## Variable
+### Variable
 
 > Necessary Variable
 - `-v /your_path/bingpt/.env:/pandora-ai/.env`  or `-e API_BASE_URL=https://www.example.com`
@@ -103,12 +103,12 @@ docker run -itd --name bingpt --hostname bingpt --net bridge -p 3001:3000 --rest
 - `-v /your_path/bingpt/nuxt.config.js:/pandora-ai/nuxt.config.js`
 - - `nuxt.config.js` file is nuxt configuration file，Can be used to change the title, etc
 
-## Support Platform
+### Support Platform
 
 - amd64
 - arm64
 
-# Thanks
+## Thanks
 
 - [@waylaidwanderer/PandoraAI](https://github.com/waylaidwanderer/PandoraAI)
 - [GitHub](https://github.com/)
