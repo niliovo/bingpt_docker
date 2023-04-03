@@ -1,7 +1,7 @@
-- [中文](#bingpt_docker(ZH))
-- [ENGLISH](#bingpt_docker(EN))
+- [中文](#bingpt_docker-ZH)
+- [ENGLISH](#bingpt_docker-EN)
 
-# bingpt_docker(ZH)
+# bingpt_docker ZH
 
 - [Github](https://github.com/niliovo/bingpt_docker)
 - [Docker Hub](https://hub.docker.com/r/niliaerith/bingpt)
@@ -58,7 +58,7 @@ docker run -itd --name bingpt --hostname bingpt --net bridge -p 3001:3000 --rest
 - [Docker Hub](https://hub.docker.com/)
 - [中科大源](https://mirrors.ustc.edu.cn/)
 
-# bingpt_docker(EN)
+# bingpt_docker-EN
 
 - [Github](https://github.com/niliovo/bingpt_docker)
 - [Docker Hub](https://hub.docker.com/r/niliaerith/bingpt)
